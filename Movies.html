@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="Stylesheet" href="Scripts/Styles.css" type="text/css" media="screen" />  
+		<link rel="stylesheet" href="Scripts/rowcols.css"/>
+	<script src="Scripts/Movies.js"></script>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="Movies_Header">
+    <table  class="Movies_Table">
+      <tr><th>Animation</th><th>Action</th><th>Horror</th><th>Adventure</th></tr>
+      <tr><td>
+        <select  id="AnimationList" onchange="myAnimationMovies()">
+          <option value="-1" selected="selected">Select Animation Film</option>
+          <option value="0">Nemo</option>
+          <option value="1">Monsters Inc</option>
+          <option value="2">Lion King</option>
+        </select>
+		</td>
+		<td>
+		  <select class="select" id="ActionList" onchange="myActionMovies()">
+          <option value="-1" selected="selected">Select Action Film</option>
+          <option value="0">Taken</option>
+          <option value="1">Mission Impossible</option>
+          <option value="2">Fast And Furious</option>
+        </select>
+
+      </td>
+      <td>
+        <select class="select" id="HorrorList" onchange="myHorrorMovies()">
+          <option value="-1" selected="selected">Select Horror Film</option>
+          <option value="0">It</option>
+          <option value="1">Get Out</option>
+          <option value="2">The Conjuring</option>
+        </select>
+
+      </td>
+      <td>
+        <select class="select" id="AdventureList" onchange="myAdventureMovies()">
+          <option value="-1" selected="selected">Select Adventure Film</option>
+          <option value="0">Harry Potter</option>
+          <option value="1">The Lord Of The Rings</option>
+          <option value="2">How To Train Your Dragon</option>
+        </select>
+		  
+      </td></tr>
+    </table>
+  </div>
+  <!-- Navbar end -->
+  
+<!-- Animation Genre - Megan Cash C19317723 -->
+<div class="backgroundAnimation" id="Animation"  style="display:none"><!-- Animation Start -->
+    <div id="Nemo" style="display:none">
+      <div class="row">
+        <div class="column left">
+          <img class = "movie_thumbnail" src = "Graphics/Nemo.jpg"  alt="Thumbnail">
+        </div>
+        <div class="column right">
+          <div class="row">
+            <h1>Finding Nemo</h1>
+          </div>
+          <div class="row">
+            <h2>Director: Andrew Staton</h2>
+          </div>
+          <div class="row">
+            <h3>PG | 100 mins| Animation, Adventure, Family</h3>
+            <h4>IMDB Rating:<big> 8.1</big> - From 908,912 votes</h4>
+          </div>
+        </div> <!-- row 1 col 2 end -->
+      </div> <!-- row 1 col 1 end -->
+
+      <div class="row summary">
+        <p> Finding Nemo is a 2003 American computer-animated adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. 
+            It tells the story of an overprotective clownfish named Marlin, who, along with a regal blue tang named Dory sets out on a journey to find his missing son Nemo.
+            Along the way, Marlin learns to take risks and comes to terms with Nemo taking care of himself.</p>
+      </div>	<!-- row 2 end-->
+
+      <div class="row cast" >
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/AlexanderGould.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Alexander Gould <br><br>Screen Name: Nemo</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/AlbertBrooks.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Albert Brooks <br><br>Screen Name: Marlin</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/EllenDeGeneres.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Ellen DeGeneres<br><br>Screen Name: Dory</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/WillemDafoe.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Willem Dafoe <br><br>Screen Name: Gill</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/BradGarrett.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Brad Garrett <br><br>Screen Name: Bloat</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/AllisonJanney.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Allison Janney <br><br>Screen Name: Peach</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/StephenRoot.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Stephen Root <br><br>Screen Name: Bubbles</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/BobPeterson.jpg" alt="Actor"/> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Bob Peterson <br><br>Screen Name: Mr.Ray</p>
+        </div>
+      </div>
+    </div> <!-- Nemo end -->
+	
+
+
+    <div id="Monsters Inc" style="display:none">
+      <div class="row">
+        <div class="column left">
+	        <img class = "movie_thumbnail" src = "Graphics/MonstersInc.jpg"  alt="Thumbnail">
+        </div>
+        <div class="column right">
+          <div class="row">
+            <h1>Monsters Inc.</h1>
+          </div>
+          <div class="row">
+            <h2>Director: Pete Docter</h2>
+          </div>
+          <div class="row">
+            <h3> PG | 96 mins | Animation, Family, Adventure</h3>
+            <h4>IMDB Rating:<big>8.0</big> - From 777,978 votes</h4>
+          </div>
+        </div>
+      </div> 
+	
+      <div class="row summary">
+	      <p> Monsters, Inc. is a 2001 American computer-animated comedy film produced by Pixar Animation Studios and distributed by Walt Disney Pictures. 
+	          The film centers on two monsters – Top scarer James P. "Sulley" Sullivan and his one-eyed partner and best friend Mike Wazowski – employed at the titular energy-producing factory Monsters, Inc, which generates power by scaring human children. 
+	          The monster world believes that children are toxic, and when a small child wanders into Monstropolis, The two monsters realise things may not be what they think. Sulley and Mike must return her home before it is too late.</p>
+      </div>	
+
+      <div class="row cast" >
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JohnGoodman.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: John Goodman <br><br>Screen Name: Sullivan</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/BillyCrystal.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Billy Crystal <br><br>Screen Name: Mike Wazowski</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/MaryGibbs.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Mary Gibbs <br><br>Screen Name: Boo</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/SteveBuscemi.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Steve Buscemi <br><br>Screen Name: Randall</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JamesCoburn.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: James Coburn <br><br>Screen Name: Waternoose</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JenniferTilly.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Jennifer Tilly <br><br>Screen Name: Celia</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/BobPeterson.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Bob Peterson <br><br>Screen Name: Roz</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JohnRatzenberger.jpg"  alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: John Ratzenberger <br><br>Screen Name: Yeti</p>
+        </div>
+      </div>
+	  </div> <!-- Monsters Inc end -->
+	
+
+
+    <div id="Lion King" style="display:none">
+      <div class="row">
+        <div class="column left">
+	        <img class = "movie_thumbnail" src = "Graphics/LionKing.jpg" alt="Thumbnail">
+        </div>
+        <div class="column right">
+	        <div class="row">
+		        <h1>The Lion King</h1>
+	        </div>
+	        <div class="row">
+		        <h2>Directors:  Rob Minkoff & Roger Allers</h2>
+	        </div>
+	        <div class="row">
+		        <h3>PG | 89 minutes | Animation, Musical Drama, Family </h3>
+		        <h4>IMDB Rating:<big> 8.5 </big> - From 894,610 votes</h4>
+    
+	        </div>
+	  
+        </div>
+      </div> 
+	
+      <div class="row summary">
+	      <p> The Lion King is a 1994 American animated musical film produced by Walt Disney Pictures.The Lion King tells 
+	          the story of Simba, a young lion who is to succeed his father, Mufasa, as King of the Pride Lands. However, after Simba's paternal uncle Scar murders Mufasa, Simba is manipulated into thinking he was responsible and flees into exile. 
+	          After growing up in the company of the carefree outcasts Timon and Pumbaa, Simba receives valuable perspective from his childhood friend, Nala, and his shaman, Rafiki, 
+	          before returning to challenge Scar to end his tyranny and take his place in the Circle of Life as the rightful King.</p>
+      </div>	
+
+      <div class="row cast" >
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/MatthewBroderick.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Matthew Broderick <br><br>Screen Name: Simba</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JamesEarl.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: James Earl Jones <br><br>Screen Name: Mufasa</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/MoiraKelly.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Moira Kelly <br><br>Screen Name: Nala</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/NathanLane.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Nathan Lane <br><br>Screen Name: Timon</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/ErnieSabella.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Ernie Sabella <br><br>Screen Name: Pumbaa</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/RowanAtkinson.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Rowan Atkinson <br><br>Screen Name: Zazu</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JeremyIrons.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Jeremy Irons <br><br>Screen Name: Scar</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/RobertGuillaume.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Robert Guillaume <br><br>Screen Name: Rafiki</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/WhoopiGoldberg.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Whoopi Goldberg <br><br>Screen Name: Shenzi</p>
+        </div>
+      </div>
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/JonathanTaylor.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Jonathan Taylor Thomas <br><br>Screen Name: Young Simba</p>
+        </div>
+      </div>
+      
+
+      <div class="row cast">
+        <div class="column2 left2"><img class = "castPictures" src = "Graphics/NiketaCalame.jpg" alt="Actor"> 
+        </div>
+        <div class="column2 right2"><p class = "cast">Name: Niketa Calame-Harris <br><br>Screen Name: Young Nala</p>
+        </div>
+      </div>
+	  </div> <!-- Lion King End -->	
+	  
+  </div> <!-- Animation End -->
+
+<!-- Horror Genre - Devano Jose C19312821 -->
+<div class="backgroundHorror" id="Horror" style="display:none"><!-- Horror start -->
+    <div id="It" style="display:none">
+        <div class="row">
+  <div class="column left">
+	<img class = "movie_thumbnail" src = "Graphics/itposter.jpg" alt="Thumbnail">
+  </div>
+  <div class="column right">
+	  <div class="row">
+		  <h1>It (2017) </h1>
+	  </div>
+	  <div class="row">
+		  <h2>Director: Andy Muschietti</h2>
+	  </div>
+	  <div class="row">
+		  <h3>R | 2h 15mins | Horror</h3>
+		  <h4>IMDB Rating:<big>7.3</big> - From 427,532 votes</h4>
+    
+	  </div>
+	  
+  </div>
+</div> 
+	
+<div class="row summary">
+	<p> During summer break a group of children in Derry come together to defeat a creature. 
+	The mysterious creature is shaped like a clown and terrorises the children of the town. 
+	The movie is based on a novel by Stephen King.
+	</p>
+</div>	
+
+
+<div class="row cast" >
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/jaedenM.jpg" alt="Thumbnail"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Jaeden Martell <br><br>Screen Name: Bill Denbrough</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/JR.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Jeremy Ray Taylor<br><br>Screen Name: Ben Hanscom</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/SL.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Sophia Lillis<br><br>Screen Name: Beverly Marsh</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/FW.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Finn Wolfhard<br><br>Screen Name: Richie Tozier</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/CJ.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Chosen Jacobs<br><br>Screen Name: Mike Hanlon</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/JDG.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Jack Dylan Grazer <br><br>Screen Name: Eddie Kaspbrak </p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/WO.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Wyatt Oleff <br><br>Screen Name: Stanleyy Uris</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/BS.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Bill Skarsgard <br><br>Screen Name: Pennywise</p>
+</div>
+</div>
+
+</div>	
+
+    <div id="Get Out" style="display:none">
+        
+<div class="row">
+  <div class="column left">
+	<img class = "movie_thumbnail" src = "Graphics/GetOut.jpg" alt="Thumbnail">
+  </div>
+  <div class="column right">
+	  <div class="row">
+		  <h1>Get Out (2017)</h1>
+	  </div>
+	  <div class="row">
+		  <h2>Director: Jordan Peele</h2>
+	  </div>
+	  <div class="row">
+		  <h3>R | 1h 44min | Horror, Mystery, Thriller</h3>
+		  <h4>IMDB Rating:<big>7.7</big> - From 452,141 votes</h4>
+    
+	  </div>
+	  
+  </div>
+</div> 
+	
+<div class="row summary">
+	<p> Chris Washington visits his girlfriend's parents over the weekend at their house.
+	He feels uneasy around them as he gets to know them,
+	and he discovers a shocking truth about the family.
+	</p>
+</div>	
+	
+<div class="row cast" >
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/DK.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Daniel Kaluuya <br><br>Screen Name: Chris Washington</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/AW.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Allison Williams<br><br>Screen Name: Rose Armitage</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/CK.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Catherine Kenner<br><br>Screen Name: Missy Armitage</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/BW.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Bradley Whitford<br><br>Screen Name: Dean Armitage</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/CLJ.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Caleb Landry Jones<br><br>Screen Name: Jeremy Armitage</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/MH.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Marcus Henderson<br><br>Screen Name: Walter</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/BG.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Betty Gabriel<br><br>Screen Name: Georgina</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/LS.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: LaKeith Stanfield<br><br>Screen Name: Andre Logan King</p>
+</div>
+</div>
+    </div>
+
+    <div id="The Conjuring" style="display:none">
+        <div class="row">
+  <div class="column left">
+	<img class = "movie_thumbnail" src = "Graphics/TC.jpg" alt="Thumbnail">
+  </div>
+  <div class="column right">
+	  <div class="row">
+		  <h1>The Cojuring (2013)</h1>
+	  </div>
+	  <div class="row">
+		  <h2>Director: James Wan</h2>
+	  </div>
+	  <div class="row">
+		  <h3>R | 1h 52min | Horror, Mystery, Thriller</h3>
+		  <h4>IMDB Rating:<big>7.5</big> - From 420,591 votes</h4>
+    
+	  </div>
+	  
+  </div>
+</div> 
+	
+<div class="row summary">
+	<p> Roger and Carolyn Perron buy a new farmhoouse, they soon discover there is a drak 
+	presence terrorizing them. They call in two famous paranormal hunters Ed and Lorraine Warren who needs to excorise the demon
+	before its too late 
+	</p>
+</div>	
+
+<div class="row cast" >
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/VF.jpg"  alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Vera Farmiga<br><br>Screen Name: Lorraine Warren</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/PW.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Patrick Wilson<br><br>Screen Name: Ed Warren</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/LT.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Lili Taylor<br><br>Screen Name: Carolyn Perron</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/RL.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Ron Livingston<br><br>Screen Name: Roger Perron</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/SC.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Shanley Caswell<br><br>Screen Name: Andrea</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/HM.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Hayley McFarland<br><br>Screen Name: Nancy</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/JK.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Joey King<br><br>Screen Name: Christine</p>
+</div>
+</div>
+
+<div class="row cast">
+<div class="column2 left2"><img class = "castPictures" src = "Graphics/MF.jpg" alt="Actor"> 
+</div>
+<div class="column2 right2"><p class = "cast">Name: Mackenzie Foy<br><br>Screen Name: Cindy</p>
+</div>
+</div>
+</div>
+    
+  </div>  <!-- Horror End -->
+
+<!-- Action Genre - Asma Soomro C19303196 -->
+<div class="backgroundAction" id="Action"  style="display:none"><!-- Action start -->
+  
+  <div  id="Taken" style="display:none;"> 
+	  <div class="row"> <!-- row 1 start -->
+		  <div class="column left"> <!-- col left start -->
+		   <img class="movie_thumbnail" src="Graphics/Taken.jpg" alt="Taken movie">
+      </div> <!-- col left end -->
+      <div class="column right"> <!-- col right start -->
+        <div class="row">
+          <h1>Taken </h1>
+        </div>
+        <div class="row">
+          <h2>Director: Pierre Morel </h2>
+        </div>
+        <div class="row">
+          <h3>PG-13 | 1h 30min | Action, Thriller | 30 January 2009 (USA)</h3>
+          <h4>IMDB Rating: <big>7.8</big> - From 551,049 votes</h4>
+        </div>
+      </div> <!-- col right end -->
+    </div>
+
+    <div class="row summary"> <!-- row 2 start -->
+      <p>A retired CIA agent travels across Europe and relies on his old skills to save his estranged daughter, who has been kidnapped while on a trip to Paris. </p>
+    </div>	<!-- row 2 end -->
+    <!-- Each chunk of code is a new Character-->
+    <div class="row cast" > 
+      <div class="column2 left2"><img class = "castPictures" src="Graphics/liam.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Liam Nesson<br><br>Screen Name: Bryan Mills</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src="Graphics/maggie.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Maggie Grace<br><br>Screen Name: Kim </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src="Graphics/leland.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Leland Orser<br><br>Screen Name: Sam</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/jon.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Jon Gries <br><br>Screen Name: Casey </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/david.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: David Warshofsky <br><br>Screen Name: Bernie </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/holly.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Holly Valance <br><br>Screen Name: Sheerah</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/katie.jpg" alt="Taken Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Katie Cassidy <br><br>Screen Name: Amanda</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/xander.jpg" alt="Taken Actor"/>
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Xander Berkeley <br><br>Screen Name: Stuart</p>
+      </div>
+    </div>
+  </div> <!-- Taken end -->
+
+  <div  id="Mission Impossible" style="display:none;"> 
+	  <div class="row"> <!-- row 1 start -->
+      <div class="column left"> <!-- col left start -->
+        <img class="movie_thumbnail" src="Graphics/Mission impossible.jpg" alt="Mission Impossible Tile">
+      </div> <!-- col left end -->
+      <div class="column right"> <!-- col right start -->
+        <div class="row">
+          <h1>Mission Impossible </h1>
+        </div>
+        <div class="row">
+          <h2>Director: Brian De Palma </h2>
+        </div>
+        <div class="row">
+          <h3>PG-13 | 1h 50min | Action, Adventure, Thriller | 22 May 1996 (USA)</h3>
+          <h4>IMDB Rating: <big>7.1</big> - From 372,041 votes</h4>
+        </div>
+      </div> <!-- col right end -->
+    </div>	
+
+    <div class="row summary"> <!-- row 2 start -->
+      <p>An American agent, under false suspicion of disloyalty, must discover and expose the real spy without the help of his organization. </p>
+    </div>	<!-- row 2 end -->
+
+    <div class="row cast" > 
+      <div class="column2 left2"><img class = "castPictures" src="Graphics/tom.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Tom Cruise <br><br>Screen Name: Ethan Hunt</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src="Graphics/jon.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Jon Voight <br><br>Screen Name: jim Phelps</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src="Graphics/emmanuelle.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Emmanuelle Béart <br><br>Screen Name: Claire </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/henry.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Henry Czerny <br><br>Screen Name: Kittridge </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/jean.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Jean Reno <br><br>Screen Name: Krieger </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/ving.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Ving Rhames <br><br>Screen Name: Luther </p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/kristin.jpg" alt="Mission Impossible Actor"/> 
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Kristin Scott Thomas <br><br>Screen Name: Sarah Davies</p>
+      </div>
+    </div>
+
+    <div class="row cast">
+      <div class="column2 left2"><img class = "castPictures" src = "Graphics/vanessa.jpg" alt="Mission Impossible Actor"/>
+      </div>
+      <div class="column2 right2"><p class = "cast">Name: Vanessa Redgrave <br><br>Screen Name: max </p>
+      </div>
+    </div>
+  </div> <!-- mission impossible end -->
+    
+
+  <div id="Fast And Furious" style="display:none">
+	  <div class="row"> <!-- row 1 start -->
+      <div class="column left"> <!-- col left start -->
+        <img class="movie_thumbnail" src="Graphics/Fast&furious.jpg" alt="Fast And Furious Title">
+      </div> <!-- col left end -->
+      <div class="column right"> <!-- col right start -->
+        <div class="row">
+          <h1>Fast And Furious</h1>
+        </div>
+        <div class="row">
+          <h2>Director: Rob Cohen </h2>
+        </div>
+        <div class="row">
+          <h3>PG-13 | 1h 46min | Action, Crime, Thriller  | 22 June 2001 (USA)</h3>
+          <h4>IMDB Rating: <big>6.8</big> - From 333,287 votes</h4>
+        </div>
+      </div> <!-- col right end -->
+    </div>
+	  <div class="row summary"> <!-- row 2 start -->
+      <p>Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy. </p>
+	  </div>	<!-- row 2 end -->
+    <!-- Each chunk of code is a new Character-->
+		<div class="row cast" > 
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/paul.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Paul Walker <br><br>Screen Name: Brian O'Conner</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/vin.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Vin Diesel <br><br>Screen Name: Dominic Toretto </p>
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/michelle.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Michelle Rodriguez <br><br>Screen Name: Letty </p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/jordana.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Jordana Brewster <br><br>Screen Name: Mia Toretto </p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/rick.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Rick Yune <br><br>Screen Name: Johnny Tran </p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/chad.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Chad Lindberg <br><br>Screen Name: Jesse</p>
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/johnny.jpg" alt="Fast And Furious Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Johnny Strong <br><br>Screen Name: Leon </p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/matt.jpg" alt="Fast And Furious Actor"/>
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Matt Schulze <br><br>Screen Name: Vince </p>
+		  </div>
+		</div>
+  </div> <!-- fast and furious end -->
+</div> <!-- Action end -->
+
+
+	<!-- Adventure Genre - Darren O'Donnell C19313413 -->
+<div class="backgroundAdventure" id="Adventure"  style="display:none"> <!-- Adventure start -->
+  <div  id="Harry Potter" style="display:none;"> 
+	  <div class="row"> <!-- row 1 start -->
+      <div class="column left"> <!-- col left start -->
+        <img class="movie_thumbnail mainImage" src="Graphics/HPFUll.jpg" alt="Harry Potter Tile"><!-- Replace with picture of movie -->
+      </div> <!-- col left end -->
+      <div class="column right"> <!-- col right start -->
+        <div class="row">
+          <h1>Harry Potter and the Sorcerer's Stone</h1>
+        </div>
+        <div class="row">
+          <h2>Director: Chris Columbus</h2>
+        </div>
+        <div class="row">
+          <h3>PG | 152min | Adventure, Family, Fantasy | 16 November 2001 (USA)</h3><!-- Example: PG | 156 mins | Action, Adventure, Fantasy-->
+          <h4>IMDB Rating:<big> 7.6 </big> - From 601,478 votes</h4>
+        </div>
+      </div> <!-- col right end -->
+    </div> <!-- Row 1 end -->
+	  <div class="row summary"> <!-- row 2 start -->
+      <p>An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world. </p>
+	  </div>	<!-- row 2 end -->
+    <!-- Each chunk of code is a new Character-->
+		<div class="row cast" > 
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/RichardHarris.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Richard Harris<br><br>Screen Name: Albus Dumbledore</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Maggie Smith.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Maggie Smith<br><br>Screen Name: Professor McGonagall</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Robbie Coltrane.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Robbie Coltrane<br><br>Screen Name: Hagrid</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Daniel Radcliffe.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Daniel Radcliffe<br><br>Screen Name: Harry Potter</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Rupert Grint.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Rupert Grint<br><br>Screen Name: Ron Weasley</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Emma Watson.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Emma Watson<br><br>Screen Name: Hermione Granger</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Matthew Lewis.jpg" alt="Harry Potter Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Matthew Lewis<br><br>Screen Name: Neville Longbottom</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Tom Felton.jpg" alt="Harry Potter Actor1"/>
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Tom Felton<br><br>Screen Name: Draco Malfoy</p>
+		  </div>
+		</div>
+	</div>	<!-- Harry Potter end-->
+     
+  <div id="The Lord Of The Rings" style="display:none">
+     <div class="row"> <!-- row 1 start -->
+      <div class="column left"> <!-- col left start -->
+        <img class="movie_thumbnail mainImage" src="Graphics/LOTRFull.jpg" alt="Lord Of The Rings Tile"><!-- Replace with picture of movie -->
+      </div> <!-- col left end -->
+      <div class="column right"> <!-- col right start -->
+        <div class="row">
+          <h1>The Lord of the Rings: The Fellowship of the Ring</h1>
+        </div>
+        <div class="row">
+          <h2>Director: Peter Jackson</h2>
+        </div>
+        <div class="row">
+          <h3>PG | 178min | Adventure, Action, Drama |  19 December 2001 (UK)</h3><!-- Example: PG | 156 mins | Action, Adventure, Fantasy-->
+          <h4>IMDB Rating:<big> 8.8 </big> - From 1,582,966 votes</h4>
+        </div>
+      </div> <!-- col right end -->
+    </div> <!-- Row 1 end -->
+	  <div class="row summary"> <!-- row 2 start -->
+      <p>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron. </p>
+	  </div>	<!-- row 2 end -->
+    <!-- Each chunk of code is a new Character-->
+		<div class="row cast" > 
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Sean Astin.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Sean Astin<br><br>Screen Name: Samwise Gamgee</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Sala Baker.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Sala Baker<br><br>Screen Name: Sauron</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Orlando Bloom.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Orlando Bloom<br><br>Screen Name: Legolas</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Ian McKellen.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Ian McKellen<br><br>Screen Name: Gandalf</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Viggo Mortensen.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Viggo Mortensen<br><br>Screen Name: Aragorn</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/John Rhys-Davies.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: John Rhys-Davies<br><br>Screen Name: Gimli</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Hugo Weaving.jpg" alt="Lord Of The Rings Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Hugo Weaving<br><br>Screen Name: Elrond</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Christopher Lee.jpg" alt="Lord Of The Rings Actor"/>
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Christopher Lee<br><br>Screen Name: Saruman</p>
+		  </div>
+		</div>
+  </div> <!-- lord of the rings end -->
+
+  <div id="How To Train Your Dragon" style="display:none">
+  <div class="row"> <!-- row 1 start -->
+      <div class="column left"> <!-- col left start -->
+        <img class="movie_thumbnail mainImage" src="Graphics/HTTYDFull.jpg" alt="How To Train Your Dragon Tile"><!-- Replace with picture of movie -->
+      </div> <!-- col left end -->
+      <div class="column right"> <!-- col right start -->
+        <div class="row">
+          <h1>How To Train Your Dragon</h1>
+        </div>
+        <div class="row">
+          <h2>Directors: Dean DeBlois & Chris Sanders</h2>
+        </div>
+        <div class="row">
+          <h3>PG | 98min | Adventure, Action, Animation |  31 March 2010 (UK)</h3><!-- Example: PG | 156 mins | Action, Adventure, Fantasy-->
+          <h4>IMDB Rating:<big> 8.1 </big> - From 638,135 votes</h4>
+        </div>
+      </div> <!-- col right end -->
+    </div> <!-- Row 1 end -->
+	  <div class="row summary"> <!-- row 2 start -->
+      <p>A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed. </p>
+	  </div>	<!-- row 2 end -->
+    <!-- Each chunk of code is a new Character-->
+		<div class="row cast" > 
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Jay Baruchel.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Jay Baruchel<br><br>Screen Name: Hiccup</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Gerard Butler.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Gerard Butler<br><br>Screen Name: Stoick</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src="Graphics/Craig Ferguson.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Craig Ferguson<br><br>Screen Name: Gobber</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/America Ferrera.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: America Ferrera<br><br>Screen Name: Astrid</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Jonah Hill.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Jonah Hill<br><br>Screen Name: Snotlout</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Christopher Mintz-Plasse.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Christopher Mintz-Plasse<br><br>Screen Name: Fishlegs</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/T.J. Miller.jpg" alt="How To Train your Dragon Actor"/> 
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: T.J. Miller<br><br>Screen Name: Tuffnut</p>
+		  </div>
+		</div>
+
+		<div class="row cast">
+		  <div class="column2 left2"><img class = "castPictures" src = "Graphics/Kristen Wiig.jpg" alt="How To Train your Dragon Actor"/>
+		  </div>
+		  <div class="column2 right2"><p class = "cast">Name: Kristen Wiig<br><br>Screen Name: Ruffnut</p>
+		  </div>
+		</div>
+      
+  </div> <!-- How to train your dragon end -->
+  
+</div> <!-- adventure block end -->
+
+    
+</body> 
+
+</html>

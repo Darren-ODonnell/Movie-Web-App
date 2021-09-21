@@ -1,0 +1,52 @@
+/*Styles - Darren O'Donnell*/
+.Movies_Header{
+	font:Times New Roman;
+	font-size:42px;
+	font-weight:bold;
+	background-color:cyan;
+	color:orange;
+	text-align:center;
+	
+}
+.Movies_Table{
+	width:100%;
+	padding:16px;
+	border:1px black;
+	text-align:center;
+}
+
+select{
+    margin:40px;
+	background-color:cyan;
+
+    color:orange;
+	font-weight:bold;
+	font-size:large;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+}
+
+h1{
+	font:Times New Roman;
+	font-size:40px;
+	font-weight:bold;
+}
+h2{
+	font:Times New Roman;
+	font-size:20px;
+}
+h3{
+	font:Times New Roman;
+	font-size:15px;
+	font-style:italic;
+}
+h4{
+	font:Times New Roman;
+	font-size:15px;
+	font-weight:normal;
+}
+big{
+	font:Times New Roman;
+	font-size:40px;
+	font-weight:bold;
+}
+

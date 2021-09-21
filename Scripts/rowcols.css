@@ -1,0 +1,98 @@
+/*rowcols by Darren O'Donnell*/
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+/* setting up rows and columns */
+
+.column {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  float:left; 
+  width:30%;
+}
+.right {
+  float:right;
+  width:69%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  padding:10px;
+  height:100px; 
+}
+.left2 {
+  float:left;
+  width:15%;
+}
+
+.right2 {
+  float:right;
+  width:84%;
+}
+
+/* images */
+
+.movie_thumbnail {
+	height:100%;
+	width:100%;
+}
+
+.castPictures{
+	float:right;
+	height:80px;
+}
+
+/* each genre has a separate background - the patterns are light in colour to contrast the content */
+
+.backgroundHorror {
+	 background-image: url("../Graphics/pattern3.png");
+	 background-repeat: repeat;
+}
+.backgroundAction {
+	 background-image: url("../Graphics/pattern4.png");
+	 background-repeat: repeat;
+}
+.backgroundAdventure {
+	 background-image: url("../Graphics/pattern5.png");
+	 background-repeat: repeat;
+}
+.backgroundAnimation {
+	 background-image: url("../Graphics/pattern6.png");
+	 background-repeat: repeat;
+}
+
+
+
+/* Text Elements */
+.cast{
+	height:20%;
+}
+
+.MovieTitle {
+	
+}
+.Director {
+	
+}
+.AgeLengthGenres {
+	
+}
+.IMDB {
+	
+}
+.summary {
+	font-style: italic;
+	
+}
+
